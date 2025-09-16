@@ -1,0 +1,38 @@
+/* styles/main.css 혹은 main.scss 최상단 */
+:root{
+  --upload:#e7e7e7;   /* 밝은 그린 - 업로드(성공) */
+  --delete:#ef4444;   /* 레드 - 삭제(위험) */
+  --open:#1daa3c;     /* 블루 - 열기 */
+  --link:#3b82f6;     /* 블루 - 링크 */
+  --link-hover:#2563eb; /* 블루 진한 톤 - 링크 hover */
+  --text:#1f2937;     /* 진한 그레이 - 텍스트 */
+  --bg:#ffffff;       /* 화이트 - 배경 */
+  --btn-dark:#1f2937; /* 다크 버튼 */
+  --btn-light:#f3f4f6;/* 라이트 버튼 */
+  --border:#e5e7eb;   /* 연한 그레이 - 보더 */
+  --ring:0 0 0 3px rgba(59,130,246,0.4); /* 블루톤 포커스 링 */
+}
+html {
+  font-size: 62.5%;
+}
+
+*{margin:0; padding:0; box-sizing:border-box;}
+ul{list-style:none;}
+
+
+a{
+  font-weight:500;
+  color:var(--link);
+  text-decoration:none;
+  &:hover{ color:var(--link-hover); }
+}
+
+h1{ font-size:3.2rem; line-height:1.1; }
+.container {
+  max-width: 80rem;
+  margin: auto;
+  @media screen and (max-width:799px){
+    padding: 0 2rem;
+    
+  }
+}
